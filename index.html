@@ -1,0 +1,848 @@
+<!doctype html>
+<html lang="en">
+ <head> 
+  <meta charset="UTF-8"> 
+  <title>Document</title> 
+  <!-- bootstrap cdn --> 
+  <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"> 
+  <!-- font awesome cdn --> 
+  <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"> 
+  <!-- style.css --> 
+  <link rel="stylesheet" type="text/css" href="style.css"> 
+  <!-- jquery cdn --> 
+  <script type="text/javascript" src="https://code.jquery.com/jquery-3.4.1.js"></script> 
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"> 
+  <link rel="stylesheet" href="style.css"> 
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"> 
+  <!--we had linked our css file-----> 
+ </head> 
+ <body> 
+  <style>
+     
+  
+  {
+  margin:0;
+  padding:0;
+  font-family:'kaushsn script'monospace;
+  text-decoration:none;
+}
+.full-page
+{
+  height:100%;
+  width:190%;
+}
+
+.navbar
+{
+  display:flex;
+  align-items:center;
+  padding-top:15px;
+  padding-bottom:15px;
+  background-color:orangered;
+  padding-left:0px;
+}
+.nav h1
+{
+  padding-left:500px;
+  font-size:5px;
+  color:blue;
+}
+.nav a
+{
+  text-decoration:none;
+}
+nav 
+{
+    flex:1;
+    text-align:right;
+}
+nav ul
+{
+  display: inline-block;
+  life-style:none;
+}
+nav ul li 
+{
+    display:inline-block;
+    margin-right:50px;
+    margin-top:11px;
+}
+nav ul li a
+{
+    text-decoration:none;
+    font-size:30px;
+    color:white;
+    font-family:monospace;
+}
+
+.image img
+{
+  height:970px;
+  width:100%;
+  padding-left:0px;
+ }
+
+  .coloronphoto
+{
+  width:190%;
+  height:1000px;
+  top:100px;
+  position:absolute;
+  background:linear-gradient(rgba(0,0,0,0.1), aqua);
+  }
+   
+.image p
+{
+  transform:translateY(-600px);
+  font-size:35px;
+  text-align:center;
+   margin-right:150px;
+   color: black;
+    margin-left:250px;
+    font-family:monospace;
+    padding-bottom:50px;
+ }
+ 
+ #login-form
+{
+    display:none;
+    }
+.form-box
+{
+  width:380px;
+  height:600px;
+  position:relativl% auto;
+  background:rgba(0,0,0,0.0);
+  
+  
+  background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)),url("https://i.ibb.co/KjqTd30/bg-2.jpg");
+   
+  padding:10px;
+  overflow: hidden;
+}
+.button-box
+{
+  width:250px;
+  margin:35px auto;
+  position:relative;
+  box-shadow: 0 0 20px 9px #ff61241f;
+  border-radius: 30px;
+}
+.toggle-btn
+{
+  padding:10px 30px;
+  cursor:pointer;
+  background:transparent;
+  border:0;
+  outline: none;
+  position: relative;
+}
+#btn
+{
+  top: 0;
+  left:0;
+  position: absolute;
+  width: 100px;
+  height: 100%;
+  background: #F3C693;
+  border-radius: 30px;
+  transition: .5s;
+}
+.input-group-login
+{
+  top: 1450px;
+  position: absolute;
+  width:280px;
+  transition:.5s;
+}
+.input-group-register
+{
+   top: 1450px;
+  position:absolute;
+  width:280px;
+  transition:.5s;
+  
+  
+}
+.input-field
+{
+  width: 100%;
+  padding:10px 0;
+  margin:5px 0;
+  border-left:0;
+  border-top:0;
+  border-right:0;
+  border-bottom: 1px solid #999;
+  outline:none;
+  background:transparent;
+}
+.submit-btn
+{
+  width: 55%;
+  padding: 10px 30px;
+  cursor: pointer;
+  display: block;
+  margin: auto;
+  background:#F3C693;
+  border: 0;
+  outline: none;
+  border-radius: 30px;
+}
+.check-box
+{
+  margin: 30px 10px 34px 0;
+}
+span
+{
+  color:#777;
+  font-size:18px;
+  bottom:68px;
+  position:absolute;
+}
+#login
+{
+  left:90px;
+}
+#login input
+{
+  color:white;
+  font-size:20px;
+}
+#register
+{
+  left:-900px;
+}
+#register input
+{
+  color:white;
+  font-size: 20px;
+}
+ 
+ 
+ 
+ 
+ 
+ .IndiaTours
+{
+  text-align:center;
+  padding-top:0px;
+  padding-bottom:50px;
+}
+.IndiaTours h1
+{
+  font-family:sans-serif;
+  font-size:80px;
+  color:darkred;
+ }
+.IndiaTours p
+{
+  font-family:sans-serif;
+  font-size:43px;
+  padding-top:0px;
+  padding-bottom:40px;
+  color:black;
+  }
+.row
+{
+  float:left;
+  flex-wrap:wrap;
+  justify-content:space-around;
+}
+
+.col-1
+{
+  flex-basis:33%;
+  min-width:20px;
+}
+.col-1 img
+{
+  width:530px;
+  height:400px;
+ padding-right:90px;
+}
+.col-1 h1
+{
+  font-family:monospace;
+  font-size:25px;
+  padding-top:5px;
+  padding-bottom:20px;
+  color:black;
+  padding-left:100px;
+  }
+  .col-2
+{
+  flex-basis:33%;
+  min-width:20px;
+ }
+ .col-2 img
+{
+  width:530px;
+  height:400px;
+  padding-left:80px;
+  padding-right:10px;
+  
+}
+ .col-2 h1
+{
+  font-family:monospace;
+  font-size:25px;
+  padding-top:5px;
+  padding-bottom:25px;
+  color:black;
+  padding-left:150px;
+}
+.col-3
+{
+  flex-basis:33%;
+  min-width:20px;
+}
+.col-3 img
+{
+  width:530px;
+  height:400px;
+  padding-left:150px;
+  padding-right:2px;
+}
+.col-3 h1
+{
+  font-family:monospace;
+  font-size:25px;
+  padding-top:5px;
+  padding-bottom:300px;
+  color:black;
+  padding-left:180px;
+  }
+  
+  video {
+  width: 100%;
+  height: auto;
+  padding-bottom:180px;
+}
+  
+  .InternationalTours
+{
+  text-align:center;
+  padding-bottom:51px;
+}
+.InternationalTours h1
+{
+  font-family:sans-serif;
+  font-size:80px;
+  color:darkred;
+  padding-bottom:0px;
+ }
+.InternationalTours p
+{
+  font-family:sans-serif;
+  font-size:43px;
+  padding-top:10px;
+  padding-bottom:40px;
+  color: black;
+}
+.col-4
+{
+  flex-basis:33%;
+  min-width:20px;
+}
+.col-4 img
+{
+  width:530px;
+  height:300px;
+ padding-left:50px;
+ 
+}
+.col-4 h1
+{
+  font-family:monospace;
+  font-size:25px;
+  padding-top:5px;
+  padding-bottom:300px;
+  color:black;
+  }
+  
+  
+  
+  .transport
+{
+  text-align:center;
+  padding-bottom:500px;
+}
+.transport h1
+{
+  font-family:sans-serif;
+  font-size:80px;
+  color:darkred;
+  padding-bottom:20px;
+ }
+ .col-5
+{
+  flex-basis:33%;
+  min-width:20px;
+}
+.col-5 img
+{
+  width:530px;
+  height:300px;
+  padding-left:50px;
+
+}
+.col-5 h1
+{
+  font-family:monospace;
+  font-size:25px;
+  padding-top:5px;
+  padding-bottom:1700px;
+  color:black;
+  }
+  
+  /*slider*/
+#carouselExampleIndicators{
+  position: relative;
+  height:90vh;
+  width:100%;
+  padding-bottom:300px;
+}
+#carouselExampleIndicators .carousel-inner{
+  position: absolute;
+  height:90vh;
+  width: 100%;
+  background: #000;
+}
+#carouselExampleIndicators .carousel-inner:before{
+  position: absolute;
+  content: '';
+  background: rgba(0, 0, 0, 0.45);
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: 1;
+}
+#carouselExampleIndicators .carousel-inner .carousel-item{
+  position: absolute;
+  height: 100%;
+  width:100%;
+  background: url("../images/slider_1.jpg");
+  background-size: 100% 100%;
+  background-position: center;
+  background-attachment: fixed;
+}
+#carouselExampleIndicators .carousel-inner .carousel-item:nth-child(2){
+  background: url("../images/slider_2.jpg");
+  background-size: 100% 100%;
+  background-position: center;
+  background-attachment: fixed;
+}
+#carouselExampleIndicators .carousel-inner .carousel-item:nth-child(3){
+  background: url("../images/slider_3.jpg");
+  background-size: 100% 100%;
+  background-position: center;
+  background-attachment: fixed;
+}
+#carouselExampleIndicators .carousel-inner .carousel-item .info{
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  height:auto;
+  width: 100%;
+  z-index: 1;
+  text-align: center;
+}
+#carouselExampleIndicators .carousel-inner .carousel-item h1{
+  height:auto;
+  color: #fff;
+  width: 100%;
+  z-index: 1;
+  text-align:center;
+  font-size: 5.5em;
+  font-weight: 750;
+}
+#carouselExampleIndicators .carousel-inner .carousel-item p{
+  height:auto;
+  color: #ccc;
+  width: 100%;
+  z-index: 1;
+  text-align:right;
+  font-size: 1.2em;
+  font-weight: 500;
+}
+  
+  carousel .carousel-indicators li
+ {
+    width: 30px;
+    height: 15px;
+    border-radius: 0%
+    font-size: 400px;
+      
+}
+.carousel-caption{
+    bottom: 800px;
+}
+  .carousel-inner .carousel-item h3{
+  height:auto;
+  color: #fff;
+  width: 100%;
+  z-index: 1;
+  text-align:center;
+  font-size:115px;
+  font-weight: 750;
+
+}
+  
+ .carousel-inner .carousel-item:nth-child(1){p
+
+ 
+  color:#660033;
+  font-size:2.8em;
+  float:left;
+  
+}
+  .carousel-inner .carousel-item:nth-child(2){p
+
+ 
+  color:red;
+  font-size:2.8em;
+ 
+}
+.carousel-inner .carousel-item:nth-child(3){p
+
+ 
+  color:red;
+  font-size:2.8em;
+ 
+}
+
+  .contact
+  {
+   text-align:center;
+   font-weight:bold;
+  
+  }
+  
+  .contact h1
+{
+  
+  font-family:sans-serif;
+  font-size:100px;
+  color:darkred;
+  padding-bottom:100px;
+  }
+  
+  .contact-row
+ {
+  width:90%;
+  margin:0 auto;
+  display:flex;
+  flex-wrap:wrap;
+  justify-content:space-between;
+  }
+ .contact-left .contact-right
+{
+  flex-basis:45px;
+   padding:100px;
+  margin-bottom:20px;
+}
+.contact-left
+{
+  text-align:left;
+}
+.contact-right
+{
+  text-align:right;
+}
+.contact-row h1
+{
+  margin:50px 0;
+}
+.contact-row h2
+{
+  padding-bottom:5px;
+  color:orangered;
+  font-size:43px;
+}
+.contact-row p
+{
+  font-family:monospace;
+  font-size:20px;
+  line-height:15px;
+  color:black;
+  padding-bottom:5px;
+  
+}
+.social-icons
+{
+  padding-top:50px;
+    padding-bottom:1000px;
+    text-align:center;
+    
+}
+.social-icons .fa
+
+{
+  margin:40px 5px 0;
+  font-size:25px;
+  line-height:35px;
+  color:blue;
+  height:40px;
+  width:40px;
+ cursor:pointer;
+border: 1px solid orangered;
+}
+.social-icons p
+{
+  font-family:monospace;
+  font-size:15px;
+   padding-top:20px;
+   }
+   .social-icons .fa:hover
+{
+  background:bisque;
+}
+.collapse p
+{
+  font-size:20px;
+  color:darkred;
+  font-family:monospace;
+}
+ </style> 
+  <div class="full-page"> 
+   <div class="navbar"> 
+    <a href="index.html"><h1>TOURISM</h1></a> 
+    <a href="#" class="navbar-brand"> <img src="https://i.ibb.co/sjq7dcn/t.jpg" alt="no img" width="80px" class="rounded-circle"> </a> 
+    <nav> 
+     <ul id="MenuItems"> 
+      <li><a href="https://aptourism.gov.in/"> Tours in india</a></li> 
+      <li><a href="#">International Tours</a></li> 
+      <li><a href="#">Transport</a></li> 
+      <li><a href="#">Contact</a></li> 
+      <li><button class="loginbtn" onclick="document.getElementById('login-form').style.display='block'" style="width:auto;">Login</button> </li> 
+     </ul> 
+    </nav> 
+   </div> 
+   <div class="image"> 
+    <img src="../images/img-1.jpg"> 
+    <div class="coloronphoto"></div> 
+    <p>"Tourism boosts the revenue of the economy, creates thousands of jobs, develops the infrastructures of a country, and plants a sense of cultural exchange between foreigners and citizens."</p> 
+   </div> 
+   <div id="login-form" class="login-page"> 
+    <div class="form-box"> 
+     <div class="button-box"> 
+      <div id="btn"></div> 
+      <button type="button" onclick="login()" class="toggle-btn">Log In</button> 
+      <button type="button" onclick="register()" class="toggle-btn">Register</button> 
+     </div> 
+     <form id="login" class="input-group-login"> 
+      <input type="text" class="input-field" placeholder="Email Id" required> 
+      <input type="password" class="input-field" placeholder="Enter Password" required> 
+      <input type="checkbox" class="check-box"> 
+      <span>Remember Password</span> 
+      <button type="submit" class="submit-btn">Log in</button> 
+     </form> 
+     <form id="register" class="input-group-register"> 
+      <input type="text" class="input-field" placeholder="First Name" required> 
+      <input type="text" class="input-field" placeholder="Last Name " required> 
+      <input type="email" class="input-field" placeholder="Email Id" required> 
+      <input type="password" class="input-field" placeholder="Enter Password" required> 
+      <input type="password" class="input-field" placeholder="Confirm Password" required> 
+      <input type="checkbox" class="check-box"> 
+      <span>I agree to the terms and conditions</span> 
+      <button type="submit" class="submit-btn">Register</button> 
+     </form> 
+    </div> 
+   </div> 
+   <script>
+        var x=document.getElementById('login');
+    var y=document.getElementById('register');
+    var z=document.getElementById('btn');
+    function register()
+    {
+      x.style.left='-400px';
+      y.style.left='50px';
+      z.style.left='110px';
+    }
+    function login()
+    {
+      x.style.left='50px';
+      y.style.left='450px';
+      z.style.left='0px';
+    }
+  </script> 
+   <script>
+        var modal = document.getElementById('login-form');
+        window.onclick = function(event) 
+        {
+            if (event.target == modal) 
+            {
+                modal.style.display = "none";
+            }
+        }
+    </script> 
+   <div class="IndiaTours"> 
+    <h1>India Tours</h1> 
+    <p>Explore India, Customize Tour packages,Lowest Rates, Guaranteed Services</p> 
+    <div class="row"> 
+     <div class="col-1"> 
+      <img src="../images/img-2.jpg"> 
+      <h1>Rajasthan</h1> 
+     </div> 
+     <div class="col-1"> 
+      <img src="../images/img-3.jpg"> 
+      <h1>Hyderabad</h1> 
+     </div> 
+     <div class="col-1"> 
+      <img src="../images/img-4.jpg"> 
+      <h1>Himachal Pradesh</h1> 
+     </div> 
+    </div> 
+    <div class="row"> 
+     <div class="col-2"> 
+      <img src="../images/img-5.jpg"> 
+      <h1>Uttarakhand</h1> 
+     </div> 
+     <div class="col-2"> 
+      <img src="../images/img-6.jpg"> 
+      <h1>Kashmir</h1> 
+     </div> 
+     <div class="col-2"> 
+      <img src="../images/img-7.jpg"> 
+      <h1>Leh Ladakh</h1> 
+     </div> 
+    </div> 
+    <div class="row"> 
+     <div class="col-3"> 
+      <img src="../images/img-8.jpg"> 
+      <h1>Wildlife</h1> 
+     </div> 
+     <div class="col-3"> 
+      <img src="../images/img-9.jpg"> 
+      <h1>Gujarat</h1> 
+     </div> 
+     <div class="col-3"> 
+      <img src="../images/img-10.jpg"> 
+      <h1>Honeymoon Tours</h1> 
+     </div> 
+    </div> 
+   </div> 
+   <video width="1700" height="309" controls autoplay loop> 
+    <source src="tour.mp4" type="video/mp4"> 
+   </video> 
+   <div class="InternationalTours"> 
+    <h1>International Tours</h1> 
+    <p>Premium International Destinations, Personalized Tailor Made Tours</p> 
+    <div class="row"> 
+     <div class="col-4"> 
+      <img src="../images/img-11.jpg"> 
+      <h1>Paris</h1> 
+     </div> 
+     <div class="col-4"> 
+      <img src="../images/img-12.jpg"> 
+      <h1>Thailand</h1> 
+     </div> 
+     <div class="col-4"> 
+      <img src="../images/img-13.jpg"> 
+      <h1>Maldives</h1> 
+     </div> 
+    </div> 
+   </div> 
+   <video width="1700" height="309" controls autoplay loop> 
+    <source src="int.mp4" type="video/mp4"> 
+   </video> 
+   <div class="transport"> 
+    <h1>Transport</h1> 
+    <div class="row"> 
+     <div class="col-5"> 
+      <img src="../images/img-14.jpg"> 
+      <h1>Cars</h1> 
+     </div> 
+     <div class="col-5"> 
+      <img src="../images/img-15.jpg"> 
+      <h1>Mini Coach</h1> 
+     </div> 
+     <div class="col-5"> 
+      <img src="../images/img-16.jpg"> 
+      <h1>Luxury Coach</h1> 
+     </div> 
+    </div> 
+   </div> 
+   <!-- slider banner   --> 
+   <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel"> 
+    <ol class="carousel-indicators"> 
+     <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li> 
+     <li data-target="#carouselExampleIndicators" data-slide-to="1"></li> 
+     <li data-target="#carouselExampleIndicators" data-slide-to="2"></li> 
+    </ol> 
+    <div class="carousel-inner"> 
+     <div class="carousel-item active"> 
+      <div class="carousel-caption text-right animated zoomIn delay-1s"> 
+       <div class="info"> 
+        <h3 class="display-4">Feel The JOY</h3> 
+        <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur culpa eaque et eum maxime nisi perferendis quo ratione repellendus vitae.</p> 
+        <button class="btn btn-danger">Read More</button> 
+       </div> 
+      </div> 
+     </div> 
+     <div class="carousel-item"> 
+      <div class="carousel-caption text-left animated zoomIn delay-1s"> 
+       <div class="info"> 
+        <h3 class="display-4">Ultimate Destination</h3> 
+        <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur culpa eaque et eum maxime nisi perferendis quo ratione repellendus vitae.</p> 
+        <button class="btn btn-warning">Read More</button> 
+       </div> 
+      </div> 
+     </div> 
+     <div class="carousel-item"> 
+      <div class="carousel-caption text-right animated zoomIn delay-1s"> 
+       <div class="info"> 
+        <h3 class="display-4">Be Relaxed in Nature</h3> 
+        <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur culpa eaque et eum maxime nisi perferendis quo ratione repellendus vitae.</p> 
+        <button class="btn btn-primary">Read More</button> 
+       </div> 
+      </div> 
+     </div> 
+     <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev"> <span class="carousel-control-prev-icon" aria-hidden="true"></span> <span class="sr-only">Previous</span> </a> 
+     <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next"> <span class="carousel-control-next-icon" aria-hidden="true"></span> <span class="sr-only">Next</span> </a> 
+    </div> 
+   </div> 
+   <!-- scripts --> 
+   <!-- bootstrap javascript cdn --> 
+   <script type="text/javascript" src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script> 
+   <div class="contact"> 
+    <h1>contact</h1> 
+    <div class="contact-row"> 
+     <div class="contact-left"> 
+      <h2>Working Hours</h2> 
+      <p>Monday to Friday-9Am to 5Pm</p> 
+      <p>Saturday to Sundayday-10Am to 12Pm</p> 
+     </div> 
+     <div class="contact-right"> 
+      <h2>Get In Touch</h2> 
+      <p>Mangalagiri road,Vijayawada city,India</p> 
+      <p>devi.mamidipalli@gmail.com</p> 
+      <p>+91 7382270835</p> 
+     </div> 
+    </div> 
+    <div class="social-icons"> 
+     <i class="fa fa-facebook"></i> 
+     <i class="fa fa-instagram"></i> 
+     <i class="fa fa-twitter"></i> 
+     <i class="fa fa-whatsapp"></i> 
+     <p> created by Devi|All Rights Reserved</p> 
+     <p>©2021</p> 
+     <!-- collapse --> 
+     <a href="#x" class="btn btn-info" role="button" data-toggle="collapse">more info</a> 
+     <div class="collapse" id="x"> 
+      <p>National tourism, a combination of domestic and outbound tourism Regional tourism, a combination of domestic and inbound tourism International tourism, a combination of inbound and outbound tourism The terms tourism and travel are sometimes used interchangeably. In this context, travel has a similar definition to tourism but implies a more purposeful journey. The terms tourism and tourist are sometimes used pejoratively, to imply a shallow interest in the cultures or locations visited. By contrast, traveller is often used as a sign of distinction. The sociology of tourism has studied the cultural values underpinning these distinctions and their implications for class relations.</p> 
+     </div> 
+     <button class="btn btn-danger" type="button" data-toggle="collapse" data-target="#y">End button</button> 
+     <div class="collapse" id="y"> 
+      <img src="../images/F.png" width="1800px" height="600px"> 
+      <br> 
+      <img src="../images/Y.jpg" width="1800px" height="600px"> 
+     </div> 
+    </div> 
+   </div> 
+   <div> 
+   </div> 
+  </div> 
+ </body>
+</html>
